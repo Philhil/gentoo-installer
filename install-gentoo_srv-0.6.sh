@@ -156,7 +156,7 @@ if [ $OWNMIRROR = 0 ]; then
     STG3="`cat latest-stage3-amd64.txt |tail -1 |cut -d " " -f 1`"   
 	FLURL="http://$INSTSRV//releases/amd64/autobuilds/$STG3"
 	#PURL="http://git.nitso.org/falkland-portage.git"
-	PURL="rsync://rsync8.de.gentoo.org/gentoo-portage"
+	PURL="http://gentoo.osuosl.org/snapshots/portage-latest.tar.bz2"
 else
 	if [ "$MODE" = "I" ]; then
 		echo "Assuming stage3 and portage are on the same dir on URL"
